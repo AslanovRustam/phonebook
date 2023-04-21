@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkphonebook=self.webpackChunkphonebook||[]).push([[415],{415:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var i=t(184),o={container:{minHeight:"calc(100vh - 50px)",display:"flex",alignItems:"center",justifyContent:"center"},title:{fontWeight:500,fontSize:48,textAlign:"center"}};function r(){return(0,i.jsx)("div",{style:o.container,children:(0,i.jsxs)("h1",{style:o.title,children:["Phone book manager home page",(0,i.jsx)("span",{role:"img","aria-label":"Greeting icon"})]})})}}}]);
+//# sourceMappingURL=415.3eaf0788.chunk.js.map
