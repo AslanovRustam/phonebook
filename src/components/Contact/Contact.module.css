@@ -13,21 +13,31 @@
 }
 
 .button {
-  border: none;
-  font: inherit;
-  cursor: pointer;
-  outline: none;
   margin-left: auto;
-  border-radius: 4px;
-  padding: 8px 12px;
-  background-color: #3f51b5;
-  color: #fff;
+  font-size: 1em;
+  width: 10em;
+  padding: 0.2em 0;
+  background: white;
+  border-radius: 0.2em;
+  outline: none;
+  color: #2f2f2f;
+  border: none;
+  text-align: center;
+  text-shadow: 8px 8px 12px rgba(254, 253, 253, 0.3),
+    -8px -8px 12px rgba(12, 11, 11, 0.04);
+  transition: 0.3s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(251, 249, 249, 0.8),
+    -6px -6px 10px rgba(14, 13, 13, 0.2), 6px 6px 8px rgba(69, 68, 68, 0.075),
+    6px 6px 10px rgba(5, 5, 5, 0.15);
+  cursor: pointer;
 }
-
 .button:hover,
 .button:focus {
-  background-color: #303f9f;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #dc1e10;
+  color: white;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.7),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(188, 186, 186, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .phone {
   max-width: 1em;

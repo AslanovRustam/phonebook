@@ -5,7 +5,11 @@ import css from "./Contact.module.css";
 
 export const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
-  const handleDelete = () => dispatch(deleteContact(id));
+  const handleDelete = async () => {
+    try {
+      await dispatch(deleteContact(id));
+    } catch (error) {}
+  };
 
   return (
     <div className={css.wrapper}>

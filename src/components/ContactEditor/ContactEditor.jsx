@@ -14,8 +14,8 @@ export const ContactEditor = () => {
     const form = e.currentTarget;
     const name = form.elements.name.value;
     const number = form.elements.number.value;
-    if (name === "" && number === "") {
-      toast.error("Contact cannot be empty. Enter some text!");
+    if (name === "" || number === "") {
+      toast.error("name or number cannot be empty. Enter some text!");
       return;
     }
     if (
@@ -32,10 +32,10 @@ export const ContactEditor = () => {
 
   return (
     <form className={css.form} onSubmit={handleSubmit}>
-      <label>
+      <label className={css.label}>
         Name: <input name="name" className={css.input} />
       </label>
-      <label>
+      <label className={css.label}>
         Number: <input name="number" type="tel" className={css.input} />
       </label>
 

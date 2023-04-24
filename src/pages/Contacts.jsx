@@ -22,7 +22,7 @@ export default function Contacts() {
   };
 
   return (
-    <section>
+    <section className={s.section}>
       <title>Your Contacts</title>
       <ContactEditor />
       <Filter filter={filter} onChangeInput={onChangeInput} />

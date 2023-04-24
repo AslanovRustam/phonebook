@@ -6,6 +6,11 @@
   color: #2a363b;
 }
 
-.link.active {
+.active {
+  composes: link;
+  color: #e84a5f;
+}
+.link:hover,
+.link:focus {
   color: #e84a5f;
 }

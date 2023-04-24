@@ -6,7 +6,7 @@ export const Filter = ({ filter, onChangeInput }) => {
     <>
       <label>
         <hr />
-        Find contacts -
+        Find contacts - &nbsp;
         <input
           className={css.input}
           onChange={onChangeInput}

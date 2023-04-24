@@ -4,18 +4,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: repeat;
 }
 .phone {
   max-width: 16em;
   height: auto;
-  animation: animatePhoneRing 5s ease-in-out infinite;
+  animation: animatePhoneRing 10s ease-in-out infinite;
 }
 .title {
   font-size: 3em;
   line-height: 5em;
   font-weight: 900;
   position: relative;
-  background: white;
+  background: transparent;
   overflow: hidden;
   text-transform: uppercase;
   text-align: center;
@@ -46,7 +49,9 @@
   background-size: 3em 3em, 2em 2em;
   animation: animateText 10s linear infinite alternate;
 }
-
+.section {
+  padding: 2em 5em;
+}
 @keyframes animateText {
   from {
     background-position: 0 0;
