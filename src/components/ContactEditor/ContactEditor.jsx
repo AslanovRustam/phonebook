@@ -28,6 +28,7 @@ export const ContactEditor = () => {
     }
     dispatch(addContact({ name, number }));
     form.reset();
+    toast.success(`Contact -${name}- is successfully added`);
   };
 
   return (

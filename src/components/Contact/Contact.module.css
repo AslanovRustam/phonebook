@@ -1,19 +1,23 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 4px;
-  border: 1px solid #2a2a2a;
-  border-radius: 4px;
+  gap: 0.5em;
+  padding: 0.2em;
+  border: 0.1em solid #2a2a2a;
+  border-radius: 0.2em;
 }
 
 .text {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.button {
+.container {
   margin-left: auto;
+}
+.button,
+.buttonUpd {
+  /* margin-left: auto; */
+  margin-right: 2em;
   font-size: 1em;
   width: 10em;
   padding: 0.2em 0;
@@ -31,13 +35,19 @@
     6px 6px 10px rgba(5, 5, 5, 0.15);
   cursor: pointer;
 }
+
 .button:hover,
 .button:focus {
-  background-color: #dc1e10;
+  box-shadow: 0 0 4em red;
+  border-color: transparent;
   color: white;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.7),
-    -2px -2px 4px rgba(255, 255, 255, 0.4),
-    2px 2px 2px rgba(188, 186, 186, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: red;
+}
+.buttonUpd:hover,
+.buttonUpd:focus {
+  box-shadow: 0 0 4em rgb(113, 245, 5);
+  border-color: transparent;
+  background: rgb(246, 234, 5);
 }
 .phone {
   max-width: 1em;

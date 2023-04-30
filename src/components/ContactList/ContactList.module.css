@@ -4,5 +4,14 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 12px;
+  grid-gap: 1em;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background: rgb(193, 211, 224);
+  border-radius: 0.3em;
+  box-shadow: rgba(252, 253, 253, 0.8) -6px -6px 14px,
+    rgba(253, 253, 253, 0.2) -6px -6px 10px, rgba(69, 68, 68, 0.075) 6px 6px 8px,
+    rgba(0, 0, 0, 0.15) 6px 6px 10px;
 }
