@@ -42,7 +42,25 @@
 .label {
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
   margin-bottom: 2em;
+  color: rgb(123, 121, 121);
+  text-shadow: rgba(174, 172, 172, 0.3) 8px 8px 12px,
+    rgba(164, 162, 162, 0.06) -8px -8px 12px;
+}
+.input {
+  height: 2em;
+  padding: 0.5em;
+  outline: transparent;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 8px 8px 12px rgba(143, 142, 142, 0.2),
+    -8px -8px 12px rgba(27, 26, 26, 0.04);
+  transition: all 0.3s ease-in-out;
+}
+.input:hover,
+.input:focus {
+  outline: 1px solid rgb(109, 107, 107);
 }
 .btn {
   border: 0.1em solid red;

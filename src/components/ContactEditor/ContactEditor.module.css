@@ -5,14 +5,6 @@
   margin-bottom: 2em;
 }
 
-.input {
-  padding: 8px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 0.2em;
-  font: inherit;
-  line-height: 1em;
-  letter-spacing: 0.01em;
-}
 .label:first-child {
   margin-right: 5em;
 }
@@ -24,12 +16,16 @@
 .input {
   height: 2em;
   padding: 0.5em;
-  /* margin-bottom: 1em; */
-  outline: none;
+  outline: transparent;
   border: none;
   border-radius: 0.5em;
   box-shadow: 8px 8px 12px rgba(143, 142, 142, 0.2),
     -8px -8px 12px rgba(27, 26, 26, 0.04);
+  transition: all 0.3s ease-in-out;
+}
+.input:hover,
+.input:focus {
+  outline: 1px solid rgb(109, 107, 107);
 }
 .button {
   margin: 0 0 0 1em;
